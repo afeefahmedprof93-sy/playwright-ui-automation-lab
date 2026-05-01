@@ -1,4 +1,4 @@
-# Playwright UI Automation Framework
+# Playwright UI Automation Lab
 
 A professional end-to-end test automation framework built with **Playwright** and **TypeScript** for [automationexercise.com](https://automationexercise.com). Covers all 26 official test cases using the Page Object Model, parallel execution, automatic retries, and CI/CD via GitHub Actions.
 
