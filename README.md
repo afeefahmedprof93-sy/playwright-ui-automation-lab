@@ -1,6 +1,6 @@
 # Playwright UI Automation Lab
 
-A professional end-to-end test automation framework built with **Playwright** and **TypeScript** for [automationexercise.com](https://automationexercise.com). Covers all 26 official test cases using the Page Object Model, parallel execution, automatic retries, and CI/CD via GitHub Actions.
+A professional end-to-end test automation framework built with **Playwright** and **TypeScript** for [automationexercise.com](https://automationexercise.com). Covers all 26 official test cases using the Page Object Model, parallel execution, automatic retries, and CI/CD via GitHub Actions. The framework is configured to run across multiple browsers and devices, ensuring cross-browser compatibility and responsive validation. Supported configurations include Chromium (Desktop Chrome), Firefox (Desktop Firefox), WebKit (Desktop Safari), and Mobile Chrome emulation using Pixel 5 (375 × 667).
 
 ---
 
