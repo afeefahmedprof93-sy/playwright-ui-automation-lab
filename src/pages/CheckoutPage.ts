@@ -108,7 +108,7 @@ export class CheckoutPage extends BasePage {
 
   async assertOrderPlaced(): Promise<void> {
     await expect(
-      this.orderSuccessMsg.or(this.orderSuccessAlert),
+      this.orderSuccessMsg
     ).toBeVisible({ timeout: 15_000 });
   }
 

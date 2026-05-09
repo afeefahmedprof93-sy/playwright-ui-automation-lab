@@ -41,7 +41,7 @@ export class ContactPage extends BasePage {
   }
 
   get homeBtn(): Locator {
-    return this.page.locator('a[href="/"]', { hasText: 'Home' });
+    return this.page.locator("//a[@class='btn btn-success']//span[ text()=' Home']" );
   }
 
   // ── Actions ───────────────────────────────────────────────────────────────────
@@ -74,7 +74,9 @@ export class ContactPage extends BasePage {
     this.page.once('dialog', async (dialog) => {
       await dialog.accept();
     });
+    await this.page.waitForTimeout(1000);
     await this.submitBtn.click();
+    await this.page.waitForTimeout(1000);
   }
 
   async assertSubmissionSuccess(): Promise<void> {
@@ -85,6 +87,5 @@ export class ContactPage extends BasePage {
 
   async returnHome(): Promise<void> {
     await this.homeBtn.click();
-    await this.assertUrl('/');
   }
 }

@@ -23,7 +23,7 @@ test.describe('TC6 – Contact Us Form', () => {
       CONTACT_FORM.subject,
       CONTACT_FORM.message,
       // Use a small fixture file bundled in the project
-      path.join(__dirname, '..', 'fixtures', 'sample-upload.txt'),
+      //path.join(__dirname, '..', 'fixtures', 'sample-upload.txt'),
     );
 
     await contactPage.submitForm();

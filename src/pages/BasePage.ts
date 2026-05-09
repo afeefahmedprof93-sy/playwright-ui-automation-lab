@@ -75,7 +75,7 @@ export abstract class BasePage {
   }
 
   get navCart(): Locator {
-    return this.page.locator('a[href="/view_cart"]');
+    return this.page.locator("//a[text()=' Cart']");
   }
 
   get navSignupLogin(): Locator {
@@ -99,7 +99,7 @@ export abstract class BasePage {
   }
 
   get navTestCases(): Locator {
-    return this.page.locator('a[href="/test_cases"]');
+    return this.page.locator("//a[text()=' Test Cases']");
   }
 
   // ── Assertion helpers ────────────────────────────────────────────────────────

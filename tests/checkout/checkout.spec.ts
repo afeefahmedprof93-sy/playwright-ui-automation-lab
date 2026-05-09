@@ -113,7 +113,6 @@ test.describe('TC16 – Place Order: Login before Checkout', () => {
     await homePage.navLogout.click();
 
     // Login
-    await authPage.open();
     await authPage.login(user.email, user.password);
     await authPage.assertLoggedIn(user.name);
 

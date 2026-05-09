@@ -70,10 +70,10 @@ test.describe('TC18 – View Category Products', () => {
   test('should filter products by Men > Tshirts category', async ({ page, homePage, productsPage }) => {
     await homePage.open();
 
-    const menCategory = page.locator('.left-sidebar .panel-title a', { hasText: 'Men' });
+    const menCategory = page.locator("//a[@href='#Men']");
     await menCategory.click();
 
-    const tshirtsLink = page.locator('.panel-body a', { hasText: 'Tshirts' });
+    const tshirtsLink = page.locator("//a[contains(text(),'Tshirts')]");
     await tshirtsLink.first().click();
 
     await expect(page.locator('h2.title')).toContainText('Men - Tshirts Products');

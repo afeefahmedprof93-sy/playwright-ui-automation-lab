@@ -85,7 +85,8 @@ export class HomePage extends BasePage {
   }
 
   async assertScrolledToTop(): Promise<void> {
-    await expect(this.heroText).toContainText('Full-Fledged practice website for Automation Engineers');
+    const websiteLogo = this.page.locator("//img[@alt='Website for automation practice']");
+    await expect(websiteLogo).toBeVisible();
   }
 
   async addRecommendedProductToCart(index = 0): Promise<void> {

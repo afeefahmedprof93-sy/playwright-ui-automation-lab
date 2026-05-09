@@ -47,7 +47,6 @@ test.describe('TC2 – Login with correct credentials', () => {
     await homePage.navLogout.click();
 
     // Now log in
-    await authPage.open();
     await authPage.login(user.email, user.password);
     await authPage.assertLoggedIn(user.name);
 

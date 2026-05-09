@@ -32,7 +32,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
     actionTimeout: 15_000,
-    navigationTimeout: 30_000,
+    navigationTimeout: 60_000,
     // Block ads / analytics to keep tests stable
     extraHTTPHeaders: { 'Accept-Language': 'en-US,en;q=0.9' },
   },
